@@ -1,8 +1,8 @@
 /* line 3, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
 #index {
-  background-image: url(../images/ocean.jpg);
+  background-image: url(../images/drink.jpg);
   background-size: cover;
-  background-blend-mode: luminosity;
+  background-blend-mode: screen;
   background-color: #cc0000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -28,7 +28,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(../images/ocean.jpg);
     background-size: cover;
     z-index: -1; }
 /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
@@ -409,11 +408,12 @@ table {
 }
 /* line 1, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
 .route {
-  margin-top: 20px; }
+  margin-top: 0px; }
 
 /* line 5, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
 svg {
-  padding: 20px; }
+  padding: 20px;
+  position: absolute; }
 /*
 
 
@@ -462,22 +462,24 @@ nav #logo {
     -o-animation: logo 1s linear;
     /* Opera 12+ */
     animation: logo 1s linear;
-    /* IE 10+, Fx 29+ */ }
-/* line 60, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* IE 10+, Fx 29+ */
+    cursor: pointer; }
+/* line 61, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 nav ul {
   width: 69%;
   display: inline-block;
   box-sizing: border-box;
   vertical-align: 55px;
   text-align: right; }
-  /* line 66, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 67, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   nav ul li {
     list-style: none;
     display: inline-block;
     padding: 10px;
     font-size: 0.7em;
-    text-decoration: underline; }
-    /* line 72, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    text-decoration: underline;
+    cursor: pointer; }
+    /* line 74, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     nav ul li a {
       text-decoration: none;
       color: #352d2d; }

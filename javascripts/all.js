@@ -16056,31 +16056,35 @@ app.Router = Backbone.Router.extend({
 });
 ///////// SVG SCROLL ANIMATION //////////
 $(document).ready(function(){
+  var count = -1;
 
   $(window).scroll(function() {
+    var count = -1;
+    _.each($('.path'), function(index){
+      count += 1;
       drawLine( $('.route'),
-                $('.path')[0] );
-      drawLine( $('.route'),
-                $('.path')[1] );
+                $('.path')[count] );
     });
+  });
 
     // init the line length
-      drawLine( $('.route'),
-                $('.path')[0] );
-      drawLine( $('.route'),
-                $('.path')[1] );
+  _.each($('.path'), function(index){
+    count += 1;
+    drawLine( $('.route'),
+              $('.path')[count] );
+  });
 
     //draw the line
 
 
-    function drawLine(container, line){
+  function drawLine(container, line){
 
-      var pathLength = line.getTotalLength(),
-          maxScrollTop = $(document).height() - $(window).height(),
-          percentDone = $(window).scrollTop() / maxScrollTop,
-          length = percentDone * pathLength;
-      line.style.strokeDasharray = [ 10 *length ,pathLength].join(' ');
-    }
+    var pathLength = line.getTotalLength(),
+        maxScrollTop = $(document).height() - $(window).height(),
+        percentDone = $(window).scrollTop() / maxScrollTop,
+        length = percentDone * pathLength;
+    line.style.strokeDasharray = [5*length ,pathLength].join(' ');
+  }
 
 });
 

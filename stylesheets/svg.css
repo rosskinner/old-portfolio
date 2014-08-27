@@ -1,7 +1,8 @@
 /* line 1, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
 .route {
-  margin-top: 20px; }
+  margin-top: 0px; }
 
 /* line 5, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
 svg {
-  padding: 20px; }
+  padding: 20px;
+  position: absolute; }
