@@ -16146,8 +16146,9 @@ app.NavView = Backbone.View.extend({
   el: '#nav',
   events: {
     'click .projects' : 'projectsRouter',
-    'click .about' : 'aboutRouter',
-    'click .contact' : 'contactRouter'
+    'click .about'    : 'aboutRouter',
+    'click .contact'  : 'contactRouter',
+    'click .home'     : 'indexRouter'
   },
   initialize: function() {
     this.render();
@@ -16168,6 +16169,9 @@ app.NavView = Backbone.View.extend({
   },
   contactRouter: function () {
     app.router.navigate("contact", {trigger: true, replace: true});
+  },
+  indexRouter: function () {
+    app.router.navigate("", {trigger: true, replace: true});
   }
 });
 
