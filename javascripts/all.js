@@ -16097,6 +16097,7 @@ app.AboutView = Backbone.View.extend({
   },
   render: function () {
     this.$el.html('');
+    this.$el.attr('id', 'about');
     var about = Handlebars.compile(app.templates.aboutTemplate);
     var view = this;
     view.$el.append( about );
@@ -16114,6 +16115,7 @@ app.ContactView = Backbone.View.extend({
   },
   render: function () {
     this.$el.html('');
+    this.$el.attr('id', 'contact');
     var contact = Handlebars.compile(app.templates.contactTemplate);
     var view = this;
     view.$el.append( contact );
@@ -16180,6 +16182,7 @@ app.ProjectsView = Backbone.View.extend({
   },
   render: function () {
     this.$el.html('');
+    this.$el.attr('id', 'projects');
     var projects = Handlebars.compile(app.templates.projectsTemplate);
     var view = this;
     view.$el.append( projects );

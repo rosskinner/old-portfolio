@@ -9,6 +9,7 @@ app.AboutView = Backbone.View.extend({
   },
   render: function () {
     this.$el.html('');
+    this.$el.attr('id', 'about');
     var about = Handlebars.compile(app.templates.aboutTemplate);
     var view = this;
     view.$el.append( about );

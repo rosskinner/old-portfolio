@@ -9,6 +9,7 @@ app.ProjectsView = Backbone.View.extend({
   },
   render: function () {
     this.$el.html('');
+    this.$el.attr('id', 'projects');
     var projects = Handlebars.compile(app.templates.projectsTemplate);
     var view = this;
     view.$el.append( projects );
