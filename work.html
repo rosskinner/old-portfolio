@@ -14,28 +14,39 @@
     <nav>
       <div id='logo'>
         <a></a>
-        <a href="/"><div>
+        <a href="/"><div class='home'>
           <p>
             roscodes
           </p>
         </div>
         </a>
       </div>
-      <ul>
-        <li>
-          <a></a>
-          <a href="/projects">projects</a>
-        </li>
-        <li>
-          <a></a>
-          <a href="/about">about</a>
-        </li>
-        <li>
-          <a></a>
-          <a href="/contact">contact</a>
-        </li>
-      </ul>
+      <ul id='nav'></ul>
     </nav>
-    <p>ergh</p>
   </body>
+  <section class='main'></section>
+  <script id='nav-template' type='text/handlebars-template'>
+    <li class='projects'>
+      projects
+    </li>
+    <li class='about'>
+      about
+    </li>
+    <li class='contact'>
+      contact
+    </li>
+  </script>
+  <script id='index-template' type='text/handlebars-template'>
+    <h1>Hi! I'm Ros, your tech nerd.</h1>
+  </script>
+  <script id='projects-template' type='text/handlebars-template'>
+    <h1>ALLL MYYY PROJECTS.</h1>
+  </script>
+  <script id='about-template' type='text/handlebars-template'>
+    <h1>ABOUT MEEEEEE.</h1>
+  </script>
+  <script id='contact-template' type='text/handlebars-template'>
+    <h1>CONTACT BITCHES.</h1>
+    <p>ergh</p>
+  </script>
 </html>
