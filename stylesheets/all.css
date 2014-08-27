@@ -375,8 +375,12 @@ table {
     border-spacing: 0;
 }
 /* line 1, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
-#route {
+.route {
   margin-top: 20px; }
+
+/* line 5, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
+svg {
+  padding: 20px; }
 /*
 
 
