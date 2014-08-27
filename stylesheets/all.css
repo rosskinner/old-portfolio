@@ -1,3 +1,36 @@
+/* line 3, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+#index {
+  background-image: url(../images/ocean.jpg);
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-color: #cc0000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  width: 100%;
+  height: 97vh;
+  position: relative;
+  box-sizing: border-box; }
+  /* line 15, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  #index h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 7em;
+    padding-top: 100px;
+    margin: 0;
+    line-height: 1;
+    z-index: 1;
+    text-align: center; }
+  /* line 24, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  #index h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/ocean.jpg);
+    background-size: cover;
+    z-index: -1; }
 /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 
 /* ==========================================================================
