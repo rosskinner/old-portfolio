@@ -408,9 +408,10 @@ table {
 }
 /* line 1, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
 .route {
-  margin-top: 0px; }
+  margin-top: -200px;
+  z-index: -1; }
 
-/* line 5, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
+/* line 6, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
 svg {
   padding: 20px;
   position: absolute; }
@@ -426,63 +427,67 @@ body {
   font-family: "Helvetica Neue", helvetica, sans-serif;
   font-weight: 200; }
 
-/* line 27, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-nav #logo {
-  width: 30%;
-  display: inline-block;
-  box-sizing: border-box; }
-  /* line 31, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-  nav #logo a {
-    text-decoration: none;
-    color: #352d2d; }
-    /* line 34, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-    nav #logo a div {
-      width: 60px;
-      height: 60px;
-      border: 2px solid #352d2d;
-      padding: 10px;
-      margin: 10px;
-      position: relative;
-      border-radius: 100%;
-      -webkit-transition: border-radius 2s; }
-      /* line 43, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-      nav #logo a div p {
-        text-align: center;
-        position: absolute;
-        top: 12px;
-        left: 5px;
-        font-weight: 700; }
-  /* line 52, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-  nav #logo div:hover {
-    border-radius: 0%;
-    -webkit-animation: logo 1s linear;
-    /* Safari 4+ */
-    -moz-animation: logo 1s linear;
-    /* Fx 5+ */
-    -o-animation: logo 1s linear;
-    /* Opera 12+ */
-    animation: logo 1s linear;
-    /* IE 10+, Fx 29+ */
-    cursor: pointer; }
-/* line 61, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-nav ul {
-  width: 69%;
-  display: inline-block;
-  box-sizing: border-box;
-  vertical-align: 55px;
-  text-align: right; }
-  /* line 67, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-  nav ul li {
-    list-style: none;
+/* line 26, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+nav {
+  z-index: 100;
+  background: #FFF; }
+  /* line 29, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  nav #logo {
+    width: 30%;
     display: inline-block;
-    padding: 10px;
-    font-size: 0.7em;
-    text-decoration: underline;
-    cursor: pointer; }
-    /* line 74, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-    nav ul li a {
+    box-sizing: border-box; }
+    /* line 33, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    nav #logo a {
       text-decoration: none;
       color: #352d2d; }
+      /* line 36, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      nav #logo a div {
+        width: 60px;
+        height: 60px;
+        border: 2px solid #352d2d;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+        border-radius: 100%;
+        -webkit-transition: border-radius 2s; }
+        /* line 45, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+        nav #logo a div p {
+          text-align: center;
+          position: absolute;
+          top: 12px;
+          left: 5px;
+          font-weight: 700; }
+    /* line 54, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    nav #logo div:hover {
+      border-radius: 0%;
+      -webkit-animation: logo 1s linear;
+      /* Safari 4+ */
+      -moz-animation: logo 1s linear;
+      /* Fx 5+ */
+      -o-animation: logo 1s linear;
+      /* Opera 12+ */
+      animation: logo 1s linear;
+      /* IE 10+, Fx 29+ */
+      cursor: pointer; }
+  /* line 63, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  nav ul {
+    width: 69%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: 55px;
+    text-align: right; }
+    /* line 69, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 10px;
+      font-size: 0.7em;
+      text-decoration: underline;
+      cursor: pointer; }
+      /* line 76, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      nav ul li a {
+        text-decoration: none;
+        color: #352d2d; }
 
 @-webkit-keyframes logo {
   0% {
