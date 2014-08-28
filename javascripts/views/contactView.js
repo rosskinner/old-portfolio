@@ -1,7 +1,7 @@
 var app = app || {};
 
 app.ContactView = Backbone.View.extend({
-  el: '#contact',
+  el: '.contact',
   initialize: function() {
     this.render();
     console.log("contact to page");

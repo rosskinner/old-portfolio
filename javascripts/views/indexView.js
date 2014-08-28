@@ -4,8 +4,6 @@ app.IndexView = Backbone.View.extend({
   el: '.main',
   initialize: function() {
     this.render();
-    console.log("rendering index");
-
   },
   render: function () {
     this.$el.html('');

@@ -1,12 +1,12 @@
 var app = app || {};
 
 app.FooterView = Backbone.View.extend({
-  el: '.footer',
+  el: '#footer',
   events: {
-    'click .projects' : 'projectsRouter',
-    'click .about'    : 'aboutRouter',
-    'click .contact'  : 'contactRouter',
-    'click .home'     : 'indexRouter'
+    'click .projects-nav' : 'projectsRouter',
+    'click .about-nav'    : 'aboutRouter',
+    'click .contact-nav'  : 'contactRouter',
+    'click .home-nav'     : 'indexRouter'
   },
   initialize: function() {
     this.render();

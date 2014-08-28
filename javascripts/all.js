@@ -16023,51 +16023,31 @@ $(document).ready(function (){
 var app = app || {};
 
 app.Router = Backbone.Router.extend({
-  // routes: {
-  //   ''         : 'getindex',
-  //   'projects' : 'getprojects',
-  //   'about'    : 'getabout',
-  //   'contact'  : 'getcontact'
-  // },
   initialize: function() {
+    // NAV VIEW //
     var navView = new app.NavView();
     navView.render();
+
+    // FOOTER VIEW //
     var footerView = new app.FooterView();
     footerView.render();
+
+    // INDEX VIEW //
     var indexView = new app.IndexView();
-    console.log("index route");
     indexView.render();
+
+    // PROJECTS VIEW //
     var projectsView = new app.ProjectsView();
-    console.log("projects route");
     projectsView.render();
+
+    // ABOUT VIEW //
     var aboutView = new app.AboutView();
-    console.log("about route");
     aboutView.render();
+
+    // CONTACT VIEW //
     var contactView = new app.ContactView();
-    console.log("contact route");
     contactView.render();
    }
-  // getindex: function() {
-  //   var indexView = new app.IndexView();
-  //   console.log("index route");
-  //   indexView.render();
-  // },
-  // getprojects: function() {
-  //   var projectsView = new app.ProjectsView();
-  //   console.log("projects route");
-  //   projectsView.render();
-  // },
-  // getabout: function() {
-  //   var aboutView = new app.AboutView();
-  //   console.log("about route");
-  //   aboutView.render();
-  // },
-  //  getcontact: function() {
-  //   var contactView = new app.ContactView();
-  //   console.log("contact route");
-  //   contactView.render();
-  // }
-
 });
 ///////// SVG SCROLL ANIMATION //////////
 $(document).ready(function(){
@@ -16098,7 +16078,7 @@ $(document).ready(function(){
         maxScrollTop = $(document).height() - $(window).height(),
         percentDone = $(window).scrollTop() / maxScrollTop,
         length = percentDone * pathLength;
-    line.style.strokeDasharray = [length ,pathLength].join(' ');
+    line.style.strokeDasharray = [10*length ,pathLength].join(' ');
   }
 
 });
@@ -16108,7 +16088,7 @@ $(document).ready(function(){
 var app = app || {};
 
 app.AboutView = Backbone.View.extend({
-  el: '#about',
+  el: '.about',
   initialize: function() {
     this.render();
     console.log("about to page");
@@ -16126,7 +16106,7 @@ app.AboutView = Backbone.View.extend({
 var app = app || {};
 
 app.ContactView = Backbone.View.extend({
-  el: '#contact',
+  el: '.contact',
   initialize: function() {
     this.render();
     console.log("contact to page");
@@ -16144,12 +16124,12 @@ app.ContactView = Backbone.View.extend({
 var app = app || {};
 
 app.FooterView = Backbone.View.extend({
-  el: '.footer',
+  el: '#footer',
   events: {
-    'click .projects' : 'projectsRouter',
-    'click .about'    : 'aboutRouter',
-    'click .contact'  : 'contactRouter',
-    'click .home'     : 'indexRouter'
+    'click .projects-nav' : 'projectsRouter',
+    'click .about-nav'    : 'aboutRouter',
+    'click .contact-nav'  : 'contactRouter',
+    'click .home-nav'     : 'indexRouter'
   },
   initialize: function() {
     this.render();
@@ -16182,8 +16162,6 @@ app.IndexView = Backbone.View.extend({
   el: '.main',
   initialize: function() {
     this.render();
-    console.log("rendering index");
-
   },
   render: function () {
     this.$el.html('');
@@ -16199,44 +16177,51 @@ var app = app || {};
 app.NavView = Backbone.View.extend({
   el: '#nav',
   events: {
-    'click .projects' : 'projectsRouter',
-    'click .about'    : 'aboutRouter',
-    'click .contact'  : 'contactRouter',
-    'click .home'     : 'indexRouter'
+    'click .projects-nav' : 'projectsRouter',
+    'click .about-nav'    : 'aboutRouter',
+    'click .contact-nav'  : 'contactRouter',
+    'click .home-nav'     : 'indexRouter'
   },
   initialize: function() {
     this.render();
-    console.log("nav to page");
-
   },
   render: function () {
     this.$el.html('');
     var nav = Handlebars.compile(app.templates.navTemplate);
     var view = this;
     view.$el.append( nav );
+
+
   },
   projectsRouter: function () {
+    $("body").animate({ scrollTop: $('.projects').offset().top }, 3000);
     app.router.navigate("projects", {trigger: true, replace: true});
   },
   aboutRouter: function () {
+    $("body").animate({ scrollTop: $('.about').offset().top }, 3000);
     app.router.navigate("about", {trigger: true, replace: true});
   },
   contactRouter: function () {
+    $("body").animate({ scrollTop: $('.contact').offset().top }, 4000);
     app.router.navigate("contact", {trigger: true, replace: true});
   },
   indexRouter: function () {
+    $("body").animate({ scrollTop: $('#index').offset().top }, 4000);
     app.router.navigate("", {trigger: true, replace: true});
   }
 });
 
+if ($('body').scrollTop() > 200) {
+  console.log('scroll');
+  $('#nav').css('position', 'fixed');
+}
+;
 var app = app || {};
 
 app.ProjectsView = Backbone.View.extend({
-  el: '#projects',
+  el: '.projects',
   initialize: function() {
     this.render();
-    console.log("projects to page");
-
   },
   render: function () {
     this.$el.html('');

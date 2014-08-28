@@ -1,4 +1,9 @@
-/* line 3, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+/* line 5, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+#index, .projects, .about, .contact {
+  width: 100%;
+  height: 100vh; }
+
+/* line 10, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
 #index {
   background-image: url(../images/drink.jpg);
   background-size: cover;
@@ -7,11 +12,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: block;
-  width: 100%;
-  height: 97vh;
   position: relative;
   box-sizing: border-box; }
-  /* line 15, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 20, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 7em;
@@ -20,7 +23,7 @@
     line-height: 1;
     z-index: 1;
     text-align: center; }
-  /* line 24, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 29, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1::before {
     content: "";
     position: absolute;
@@ -418,6 +421,10 @@ table {
 
 */
 /* line 18, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+::selection {
+  color: #FFF; }
+
+/* line 23, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 body {
   background: #FFF;
   font-family: sans-serif;
@@ -425,21 +432,21 @@ body {
   font-family: "Helvetica Neue", helvetica, sans-serif;
   font-weight: 200; }
 
-/* line 26, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-nav, .footer {
+/* line 31, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+nav, #footer {
   z-index: 100;
   background: #FFF; }
-  /* line 29, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-  nav #logo, nav #contact, .footer #logo, .footer #contact {
+  /* line 34, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  nav #logo, nav #q-link, #footer #logo, #footer #q-link {
     width: 30%;
     display: inline-block;
     box-sizing: border-box; }
-    /* line 33, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-    nav #logo a, nav #contact a, .footer #logo a, .footer #contact a {
+    /* line 38, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    nav #logo a, nav #q-link a, #footer #logo a, #footer #q-link a {
       text-decoration: none;
       color: #352d2d; }
-      /* line 36, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-      nav #logo a div, nav #contact a div, .footer #logo a div, .footer #contact a div {
+      /* line 41, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      nav #logo a div, nav #q-link a div, #footer #logo a div, #footer #q-link a div {
         width: 60px;
         height: 60px;
         border: 2px solid #352d2d;
@@ -448,15 +455,15 @@ nav, .footer {
         position: relative;
         border-radius: 100%;
         -webkit-transition: border-radius 2s; }
-        /* line 45, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-        nav #logo a div p, nav #contact a div p, .footer #logo a div p, .footer #contact a div p {
+        /* line 50, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+        nav #logo a div p, nav #q-link a div p, #footer #logo a div p, #footer #q-link a div p {
           text-align: center;
           position: absolute;
           top: 12px;
           left: 5px;
           font-weight: 700; }
-    /* line 54, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-    nav #logo div:hover, nav #contact div:hover, .footer #logo div:hover, .footer #contact div:hover {
+    /* line 59, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    nav #logo div:hover, nav #q-link div:hover, #footer #logo div:hover, #footer #q-link div:hover {
       border-radius: 0%;
       -webkit-animation: logo 1s linear;
       /* Safari 4+ */
@@ -467,23 +474,23 @@ nav, .footer {
       animation: logo 1s linear;
       /* IE 10+, Fx 29+ */
       cursor: pointer; }
-  /* line 63, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-  nav ul, .footer ul {
+  /* line 68, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  nav ul, #footer ul {
     width: 69%;
     display: inline-block;
     box-sizing: border-box;
     vertical-align: 55px;
     text-align: right; }
-    /* line 69, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-    nav ul li, .footer ul li {
+    /* line 74, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    nav ul li, #footer ul li {
       list-style: none;
       display: inline-block;
       padding: 10px;
       font-size: 0.7em;
       text-decoration: underline;
       cursor: pointer; }
-      /* line 76, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-      nav ul li a, .footer ul li a {
+      /* line 81, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      nav ul li a, #footer ul li a {
         text-decoration: none;
         color: #352d2d; }
 
