@@ -16023,38 +16023,50 @@ $(document).ready(function (){
 var app = app || {};
 
 app.Router = Backbone.Router.extend({
-  routes: {
-    ''         : 'getindex',
-    'projects' : 'getprojects',
-    'about'    : 'getabout',
-    'contact'  : 'getcontact'
-  },
+  // routes: {
+  //   ''         : 'getindex',
+  //   'projects' : 'getprojects',
+  //   'about'    : 'getabout',
+  //   'contact'  : 'getcontact'
+  // },
   initialize: function() {
     var navView = new app.NavView();
     navView.render();
     var footerView = new app.FooterView();
     footerView.render();
-  },
-  getindex: function() {
     var indexView = new app.IndexView();
     console.log("index route");
     indexView.render();
-  },
-  getprojects: function() {
     var projectsView = new app.ProjectsView();
     console.log("projects route");
     projectsView.render();
-  },
-  getabout: function() {
     var aboutView = new app.AboutView();
     console.log("about route");
     aboutView.render();
-  },
-   getcontact: function() {
     var contactView = new app.ContactView();
     console.log("contact route");
     contactView.render();
-  }
+   }
+  // getindex: function() {
+  //   var indexView = new app.IndexView();
+  //   console.log("index route");
+  //   indexView.render();
+  // },
+  // getprojects: function() {
+  //   var projectsView = new app.ProjectsView();
+  //   console.log("projects route");
+  //   projectsView.render();
+  // },
+  // getabout: function() {
+  //   var aboutView = new app.AboutView();
+  //   console.log("about route");
+  //   aboutView.render();
+  // },
+  //  getcontact: function() {
+  //   var contactView = new app.ContactView();
+  //   console.log("contact route");
+  //   contactView.render();
+  // }
 
 });
 ///////// SVG SCROLL ANIMATION //////////
@@ -16096,7 +16108,7 @@ $(document).ready(function(){
 var app = app || {};
 
 app.AboutView = Backbone.View.extend({
-  el: '.main',
+  el: '#about',
   initialize: function() {
     this.render();
     console.log("about to page");
@@ -16114,7 +16126,7 @@ app.AboutView = Backbone.View.extend({
 var app = app || {};
 
 app.ContactView = Backbone.View.extend({
-  el: '.main',
+  el: '#contact',
   initialize: function() {
     this.render();
     console.log("contact to page");
@@ -16132,7 +16144,7 @@ app.ContactView = Backbone.View.extend({
 var app = app || {};
 
 app.FooterView = Backbone.View.extend({
-  el: '#footer',
+  el: '.footer',
   events: {
     'click .projects' : 'projectsRouter',
     'click .about'    : 'aboutRouter',
@@ -16141,14 +16153,14 @@ app.FooterView = Backbone.View.extend({
   },
   initialize: function() {
     this.render();
-    console.log("nav to page");
+    console.log("footer to page");
 
   },
   render: function () {
     this.$el.html('');
-    var nav = Handlebars.compile(app.templates.navTemplate);
+    var footer = Handlebars.compile(app.templates.footerTemplate);
     var view = this;
-    view.$el.append( nav );
+    view.$el.append( footer );
   },
   projectsRouter: function () {
     app.router.navigate("projects", {trigger: true, replace: true});
@@ -16220,7 +16232,7 @@ app.NavView = Backbone.View.extend({
 var app = app || {};
 
 app.ProjectsView = Backbone.View.extend({
-  el: '.main',
+  el: '#projects',
   initialize: function() {
     this.render();
     console.log("projects to page");

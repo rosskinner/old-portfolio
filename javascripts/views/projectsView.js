@@ -1,7 +1,7 @@
 var app = app || {};
 
 app.ProjectsView = Backbone.View.extend({
-  el: '.main',
+  el: '#projects',
   initialize: function() {
     this.render();
     console.log("projects to page");

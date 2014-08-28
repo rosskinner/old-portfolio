@@ -1,7 +1,7 @@
 var app = app || {};
 
 app.FooterView = Backbone.View.extend({
-  el: '#footer',
+  el: '.footer',
   events: {
     'click .projects' : 'projectsRouter',
     'click .about'    : 'aboutRouter',
@@ -10,14 +10,14 @@ app.FooterView = Backbone.View.extend({
   },
   initialize: function() {
     this.render();
-    console.log("nav to page");
+    console.log("footer to page");
 
   },
   render: function () {
     this.$el.html('');
-    var nav = Handlebars.compile(app.templates.navTemplate);
+    var footer = Handlebars.compile(app.templates.footerTemplate);
     var view = this;
-    view.$el.append( nav );
+    view.$el.append( footer );
   },
   projectsRouter: function () {
     app.router.navigate("projects", {trigger: true, replace: true});

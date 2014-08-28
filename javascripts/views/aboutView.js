@@ -1,7 +1,7 @@
 var app = app || {};
 
 app.AboutView = Backbone.View.extend({
-  el: '.main',
+  el: '#about',
   initialize: function() {
     this.render();
     console.log("about to page");
