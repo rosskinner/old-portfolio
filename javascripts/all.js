@@ -16211,10 +16211,10 @@ app.NavView = Backbone.View.extend({
   }
 });
 
-if ($('body').scrollTop() > 200) {
-  console.log('scroll');
-  $('#nav').css('position', 'fixed');
-}
+// if ($('body').scrollTop() > 200) {
+//   console.log('scroll');
+//   $('#nav').css('position', 'fixed');
+// }
 ;
 var app = app || {};
 
