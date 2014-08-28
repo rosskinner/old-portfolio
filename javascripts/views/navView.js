@@ -16,8 +16,6 @@ app.NavView = Backbone.View.extend({
     var nav = Handlebars.compile(app.templates.navTemplate);
     var view = this;
     view.$el.append( nav );
-
-
   },
   projectsRouter: function () {
     $("body").animate({ scrollTop: $('.projects').offset().top }, 3000);
