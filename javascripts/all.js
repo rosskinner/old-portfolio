@@ -16013,7 +16013,8 @@ $(document).ready(function (){
     indexTemplate: $('#index-template').html(),
     projectsTemplate: $('#projects-template').html(),
     aboutTemplate: $('#about-template').html(),
-    contactTemplate: $('#contact-template').html()
+    contactTemplate: $('#contact-template').html(),
+    footerTemplate: $('#footer-template').html()
   }
   app.router = new app.Router();
   Backbone.history.start();
@@ -16031,6 +16032,8 @@ app.Router = Backbone.Router.extend({
   initialize: function() {
     var navView = new app.NavView();
     navView.render();
+    var footerView = new app.FooterView();
+    footerView.render();
   },
   getindex: function() {
     var indexView = new app.IndexView();
@@ -16083,7 +16086,7 @@ $(document).ready(function(){
         maxScrollTop = $(document).height() - $(window).height(),
         percentDone = $(window).scrollTop() / maxScrollTop,
         length = percentDone * pathLength;
-    line.style.strokeDasharray = [5*length ,pathLength].join(' ');
+    line.style.strokeDasharray = [length ,pathLength].join(' ');
   }
 
 });
@@ -16123,6 +16126,41 @@ app.ContactView = Backbone.View.extend({
     var contact = Handlebars.compile(app.templates.contactTemplate);
     var view = this;
     view.$el.append( contact );
+  }
+});
+
+var app = app || {};
+
+app.FooterView = Backbone.View.extend({
+  el: '#footer',
+  events: {
+    'click .projects' : 'projectsRouter',
+    'click .about'    : 'aboutRouter',
+    'click .contact'  : 'contactRouter',
+    'click .home'     : 'indexRouter'
+  },
+  initialize: function() {
+    this.render();
+    console.log("nav to page");
+
+  },
+  render: function () {
+    this.$el.html('');
+    var nav = Handlebars.compile(app.templates.navTemplate);
+    var view = this;
+    view.$el.append( nav );
+  },
+  projectsRouter: function () {
+    app.router.navigate("projects", {trigger: true, replace: true});
+  },
+  aboutRouter: function () {
+    app.router.navigate("about", {trigger: true, replace: true});
+  },
+  contactRouter: function () {
+    app.router.navigate("contact", {trigger: true, replace: true});
+  },
+  indexRouter: function () {
+    app.router.navigate("", {trigger: true, replace: true});
   }
 });
 
