@@ -27,7 +27,7 @@ $(document).ready(function(){
         maxScrollTop = $(document).height() - $(window).height(),
         percentDone = $(window).scrollTop() / maxScrollTop,
         length = percentDone * pathLength;
-    line.style.strokeDasharray = [10*length ,pathLength].join(' ');
+    line.style.strokeDasharray = [5*length ,pathLength].join(' ');
   }
 
 });
