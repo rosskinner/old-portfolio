@@ -17,7 +17,7 @@ $(document).ready(function (){
     var scroll = $(window).scrollTop();
     console.log(scroll)
 
-    if (($(document).scrollTop()) > 300) {
+    if (($(document).scrollTop()) > 150) {
       $('#nav').addClass('nav-animate');
       $('.main').css({'margin-top': '107px'});
       // $('.route').css({ 'margin-top': '-93px'});

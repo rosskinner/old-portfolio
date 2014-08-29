@@ -431,19 +431,19 @@ table {
 
 
 */
-/* line 18, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 19, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 ::selection {
   color: #FFF;
   background-color: red;
   opacity: 0.8; }
 
-/* line 24, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 25, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 ::-moz-selection {
   color: #FFF;
   background-color: red;
   opacity: 0.8; }
 
-/* line 30, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 31, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 body {
   background: #FFF;
   font-family: sans-serif;
@@ -451,21 +451,21 @@ body {
   font-family: "Helvetica Neue", helvetica, sans-serif;
   font-weight: 200; }
 
-/* line 38, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 39, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 nav, #footer {
   z-index: 100;
   background: #FFF;
   top: -150px; }
-  /* line 42, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 43, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   nav #logo, nav #q-link, #footer #logo, #footer #q-link {
     width: 30%;
     display: inline-block;
     box-sizing: border-box; }
-    /* line 46, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 47, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     nav #logo a, nav #q-link a, #footer #logo a, #footer #q-link a {
       text-decoration: none;
       color: #352d2d; }
-      /* line 49, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 50, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       nav #logo a div, nav #q-link a div, #footer #logo a div, #footer #q-link a div {
         width: 60px;
         height: 60px;
@@ -475,14 +475,14 @@ nav, #footer {
         position: relative;
         border-radius: 100%;
         -webkit-transition: border-radius 2s; }
-        /* line 58, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+        /* line 59, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
         nav #logo a div p, nav #q-link a div p, #footer #logo a div p, #footer #q-link a div p {
           text-align: center;
           position: absolute;
           top: 12px;
           left: 5px;
           font-weight: 700; }
-    /* line 67, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 68, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     nav #logo div:hover, nav #q-link div:hover, #footer #logo div:hover, #footer #q-link div:hover {
       border-radius: 0%;
       -webkit-animation: logo 1s linear;
@@ -494,14 +494,14 @@ nav, #footer {
       animation: logo 1s linear;
       /* IE 10+, Fx 29+ */
       cursor: pointer; }
-  /* line 76, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 77, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   nav ul, #footer ul {
     width: 69%;
     display: inline-block;
     box-sizing: border-box;
     vertical-align: 55px;
     text-align: right; }
-    /* line 82, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 83, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     nav ul li, #footer ul li {
       list-style: none;
       display: inline-block;
@@ -509,12 +509,12 @@ nav, #footer {
       font-size: 0.7em;
       text-decoration: underline;
       cursor: pointer; }
-      /* line 89, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 90, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       nav ul li a, #footer ul li a {
         text-decoration: none;
         color: #352d2d; }
 
-/* line 100, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 101, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .nav-animate {
   position: fixed;
   top: 0px;
@@ -542,3 +542,28 @@ nav, #footer {
     border-radius: 100%; }
   100% {
     border-radius: 0%; } }
+/* line 153, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+h1 {
+  padding-left: 10px; }
+
+/* line 160, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+.grid {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: justify; }
+  /* line 165, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  .grid .item {
+    text-align: justify;
+    display: inline-block;
+    width: 200px;
+    background: #FFF; }
+    /* line 170, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    .grid .item p {
+      font-size: 0.7em; }
+
+/* line 176, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+.grid:after {
+  content: "";
+  width: 100%;
+  display: inline-block; }
