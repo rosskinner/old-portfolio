@@ -26,17 +26,13 @@ app.NavView = Backbone.View.extend({
     app.router.navigate("about", {trigger: true, replace: true});
   },
   contactRouter: function () {
-    $("body").animate({ scrollTop: $('.contact').offset().top }, 4000);
+    $("body").animate({ scrollTop: $('.contact').offset().top }, 3000);
     app.router.navigate("contact", {trigger: true, replace: true});
   },
   indexRouter: function () {
-    $("body").animate({ scrollTop: $('#index').offset().top }, 4000);
+    $("body").animate({ scrollTop: $('#index').offset().top }, 3000);
     app.router.navigate("", {trigger: true, replace: true});
   }
 });
 
-// if ($('body').scrollTop() > 200) {
-//   console.log('scroll');
-//   $('#nav').css('position', 'fixed');
-// }
-;
+
