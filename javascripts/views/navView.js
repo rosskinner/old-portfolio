@@ -30,7 +30,7 @@ app.NavView = Backbone.View.extend({
     app.router.navigate("contact", {trigger: true, replace: true});
   },
   indexRouter: function () {
-    $("body").animate({ scrollTop: $('#index').offset().top }, 3000);
+    $("body").animate({ scrollTop: ($('#index').offset().top) - 100 }, 3000);
     app.router.navigate("", {trigger: true, replace: true});
   }
 });
