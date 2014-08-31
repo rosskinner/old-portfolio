@@ -24,7 +24,11 @@
     line-height: 1;
     z-index: 1;
     text-align: center; }
-  /* line 31, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      /* line 22, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+      #index h1 {
+        font-size: 3em; } }
+  /* line 35, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1::before {
     content: "";
     position: absolute;
