@@ -5,6 +5,10 @@
   padding-top: 100px; }
 
 /* line 12, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+.contact {
+  height: 75vh; }
+
+/* line 16, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
 #index {
   background-image: url(../images/drink.jpg);
   background-size: cover;
@@ -15,7 +19,7 @@
   display: block;
   position: relative;
   box-sizing: border-box; }
-  /* line 22, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 26, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 7em;
@@ -24,7 +28,7 @@
     line-height: 1;
     z-index: 1;
     text-align: center; }
-  /* line 31, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 35, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1::before {
     content: "";
     position: absolute;
@@ -568,26 +572,25 @@ h1 {
 /* line 182, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .footer {
   background: #352d2d;
-  opacity: 0.8;
   height: 70px;
   color: #FFF;
   padding: 10px;
   box-sizing: border-box; }
-  /* line 189, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 188, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer #q-link {
     display: inline-block;
     width: 29%;
-    vertical-align: top; }
-  /* line 194, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    cursor: pointer; }
+  /* line 193, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer ul {
     margin: 0;
-    height: 35px; }
-    /* line 197, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    vertical-align: text-top; }
+    /* line 196, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .footer ul li {
       margin-top: 0; }
-      /* line 199, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 198, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .footer ul li a {
         color: #FFF; }
-  /* line 204, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 203, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer p {
     font-size: 0.7em; }

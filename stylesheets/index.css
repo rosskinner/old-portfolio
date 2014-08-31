@@ -5,6 +5,10 @@
   padding-top: 100px; }
 
 /* line 12, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+.contact {
+  height: 75vh; }
+
+/* line 16, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
 #index {
   background-image: url(../images/drink.jpg);
   background-size: cover;
@@ -15,7 +19,7 @@
   display: block;
   position: relative;
   box-sizing: border-box; }
-  /* line 22, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 26, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 7em;
@@ -24,7 +28,7 @@
     line-height: 1;
     z-index: 1;
     text-align: center; }
-  /* line 31, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 35, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1::before {
     content: "";
     position: absolute;
