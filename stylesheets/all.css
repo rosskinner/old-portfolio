@@ -592,7 +592,7 @@ h1 {
   /* line 196, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer ul {
     margin: 0;
-    vertical-align: text-top; }
+    vertical-align: top; }
     /* line 199, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .footer ul li {
       margin-top: 0; }
