@@ -495,8 +495,8 @@ nav, .footer {
         @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
           /* line 50, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
           nav #logo a div, .footer #logo a div {
-            -webkit-transform: scale(60%);
-            transform: scale(60%); } }
+            -webkit-transform: scale(0.6);
+            transform: scale(0.6); } }
         /* line 64, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
         nav #logo a div p, .footer #logo a div p {
           text-align: center;
