@@ -1,11 +1,8 @@
 var app = app || {};
 
 app.FooterView = Backbone.View.extend({
-  el: '#footer',
+  el: '.footer',
   events: {
-    'click .projects-nav' : 'projectsRouter',
-    'click .about-nav'    : 'aboutRouter',
-    'click .contact-nav'  : 'contactRouter',
     'click .home-nav'     : 'indexRouter'
   },
   initialize: function() {
@@ -19,16 +16,8 @@ app.FooterView = Backbone.View.extend({
     var view = this;
     view.$el.append( footer );
   },
-  projectsRouter: function () {
-    app.router.navigate("projects", {trigger: true, replace: true});
-  },
-  aboutRouter: function () {
-    app.router.navigate("about", {trigger: true, replace: true});
-  },
-  contactRouter: function () {
-    app.router.navigate("contact", {trigger: true, replace: true});
-  },
   indexRouter: function () {
+    $("body").animate({ scrollTop: ($('#index').offset().top) - 100 }, 3000);
     app.router.navigate("", {trigger: true, replace: true});
   }
 });
