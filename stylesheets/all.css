@@ -602,3 +602,18 @@ h1 {
   /* line 206, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer p {
     font-size: 0.7em; }
+
+/* line 214, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+.about .container {
+  margin: 0 auto;
+  width: 80%; }
+  /* line 217, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  .about .container div {
+    width: 250px;
+    margin: 0 20px 0 0;
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top; }
+    /* line 223, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    .about .container div p {
+      font-size: 0.7em; }
