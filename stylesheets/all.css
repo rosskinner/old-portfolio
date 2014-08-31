@@ -5,10 +5,6 @@
   padding-top: 100px; }
 
 /* line 12, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
-.contact {
-  height: 90vh; }
-
-/* line 16, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
 #index {
   background-image: url(../images/drink.jpg);
   background-size: cover;
@@ -19,7 +15,7 @@
   display: block;
   position: relative;
   box-sizing: border-box; }
-  /* line 26, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 22, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 7em;
@@ -28,7 +24,7 @@
     line-height: 1;
     z-index: 1;
     text-align: center; }
-  /* line 35, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 31, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1::before {
     content: "";
     position: absolute;
@@ -431,6 +427,15 @@ table {
   box-sizing: border-box;
   position: absolute;
   -webkit-transform: scale(1, -1) rotate(-1deg); }
+
+/* line 19, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/svg.scss */
+.route3 {
+  margin-top: 0px;
+  z-index: -1;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  -webkit-transform: rotate(1deg); }
 /*
 
 
@@ -562,35 +567,38 @@ h1 {
     display: inline-block;
     width: 220px;
     background: #FFF; }
+    /* line 170, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    .grid .item p {
+      font-size: 0.7em; }
 
-/* line 173, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 176, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .grid:after {
   content: "";
   width: 100%;
   display: inline-block; }
 
-/* line 182, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 185, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .footer {
   background: #352d2d;
   height: 70px;
   color: #FFF;
   padding: 10px;
   box-sizing: border-box; }
-  /* line 188, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 191, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer #q-link {
     display: inline-block;
     width: 29%;
     cursor: pointer; }
-  /* line 193, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 196, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer ul {
     margin: 0;
     vertical-align: text-top; }
-    /* line 196, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 199, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .footer ul li {
       margin-top: 0; }
-      /* line 198, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 201, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .footer ul li a {
         color: #FFF; }
-  /* line 203, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 206, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer p {
     font-size: 0.7em; }
