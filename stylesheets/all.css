@@ -585,62 +585,68 @@ h1 {
     display: inline-block;
     width: 220px;
     background: #FFF;
-    vertical-align: top; }
-    /* line 180, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    vertical-align: top;
+    position: relative; }
+    /* line 181, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    .grid .item .vid, .grid div .vid, .container .item .vid, .container div .vid {
+      position: relative;
+      height: 150px;
+      background: transparent; }
+    /* line 186, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .grid .item p, .grid div p, .container .item p, .container div p {
       font-size: 0.7em; }
-      /* line 182, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 188, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .grid .item p a, .grid div p a, .container .item p a, .container div p a {
         color: red; }
 
-/* line 189, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 195, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .grid:after, .container:after {
   content: "";
   width: 100%;
   display: inline-block; }
 
-/* line 198, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 204, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .footer {
   background: #352d2d;
   height: 70px;
   color: #FFF;
   padding: 10px;
   box-sizing: border-box; }
-  /* line 204, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 210, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer #q-link {
     display: inline-block;
     width: 29%;
     cursor: pointer; }
-  /* line 209, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 215, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer ul {
     margin: 0;
     vertical-align: top; }
-    /* line 212, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 218, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .footer ul li {
       margin-top: 0; }
-      /* line 214, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 220, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .footer ul li a {
         color: #FFF; }
-  /* line 219, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 225, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer p {
     font-size: 0.7em; }
 
-/* line 228, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 234, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .about .container div {
   margin-top: 50px;
   vertical-align: top; }
 
-/* line 240, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 246, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .contact h2 {
   text-align: center; }
-/* line 243, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 249, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .contact form {
   width: 600px;
   margin: 2em auto;
   overflow: hidden;
   background: white;
   border-radius: 5px; }
-  /* line 249, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 255, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .message, .contact form .emailcon, .contact form .name, .contact form .footer, .contact form header, .contact form textarea {
     display: block;
     padding: 0;
@@ -648,19 +654,19 @@ h1 {
     border: 0;
     clear: both;
     overflow: hidden; }
-  /* line 258, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 264, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form header {
     height: 75px;
     background: rgba(0, 0, 0, 0.05);
     line-height: 75px;
     padding-left: 20px;
     border-radius: 5px 5px 0 0; }
-    /* line 265, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 271, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .contact form header h1 {
       font-size: 1.2em;
       text-transform: uppercase;
       color: rgba(51, 51, 51, 0.4); }
-  /* line 272, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 278, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .first, .contact form .last {
     float: left;
     width: 278px;
@@ -668,11 +674,11 @@ h1 {
     padding: 0 0 0 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     height: 50px; }
-  /* line 281, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 287, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .last {
     width: 279px;
     border-left: 0; }
-  /* line 286, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 292, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .email, .contact form textarea {
     height: 50px;
     width: 578px;
@@ -682,17 +688,17 @@ h1 {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  /* line 297, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 303, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form textarea {
     height: 200px; }
-  /* line 302, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 308, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form footer {
     height: 49px;
     border: 1px dashed rgba(0, 0, 0, 0.3);
     border-radius: 0 0 5px 5px;
     padding-left: 0;
     padding-right: 20px; }
-    /* line 309, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 315, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .contact form footer button {
       height: 32px;
       background: red;
@@ -704,13 +710,13 @@ h1 {
       padding: 0 20px 0 20px;
       border-bottom: 3px solid #c0392b;
       transition: all linear .2s; }
-      /* line 321, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 327, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .contact form footer button:hover {
         background: rgba(255, 0, 0, 0.7); }
-      /* line 325, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 331, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .contact form footer button:focus {
         outline: none; }
-  /* line 331, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 337, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .first:focus, .contact form .last:focus, .contact form .email:focus, .contact form textarea:focus, .contact form textarea:focus {
     outline: none;
     background: rgba(255, 0, 0, 0.1);
