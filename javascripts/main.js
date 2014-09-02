@@ -23,4 +23,9 @@ $(document).ready(function (){
       $('.main').css({'margin-top': '0px'});
     }
   });
+
+  $('#index').css({'min-height': $(window).height()});
+  $('.projects').css({'min-height': $(window).height()});
+  $('.about').css({'min-height': $(window).height()});
+  $('.contact').css({'min-height': $(window).height()});
 });
