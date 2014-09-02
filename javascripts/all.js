@@ -23272,11 +23272,13 @@ $(document).ready(function (){
   $('.contact').css({'min-height': $(window).height()});
 
 ///////// IF BROWSER IS MOZILLA THEN DON'T DO CLIPPING MASK /////////
-  if ($.browser.mozilla) {
+
+var FF = !(window.mozInnerScreenX == null);
+  if (FF) {
     $('#index').css({
-      'background-image': 'none',
-      background: '#FFF',
-      color: '#f02525'
+      'background-image':'none',
+      background:'#FFF',
+      color:'#f02525'
     });
   }
 });
