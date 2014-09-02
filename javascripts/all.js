@@ -23265,10 +23265,19 @@ $(document).ready(function (){
     }
   });
 
+//////  SET SECTION HEIGHT TO 100% OF WINDOW HEIGHT ////////
   $('#index').css({'min-height': $(window).height()});
   $('.projects').css({'min-height': $(window).height()});
   $('.about').css({'min-height': $(window).height()});
   $('.contact').css({'min-height': $(window).height()});
+
+///////// IF BROWSER IS MOZILLA THEN DON'T DO CLIPPING MASK /////////
+  if ($.browser.mozilla) {
+    $('#index').css({
+      background: '#FFF',
+      color: '#f02525'
+    });
+  }
 });
 var app = app || {};
 

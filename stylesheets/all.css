@@ -17,12 +17,10 @@
   background-color: #cc0000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
   display: block;
   position: relative;
   box-sizing: border-box; }
-  /* line 29, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 27, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 7em;
@@ -32,10 +30,10 @@
     z-index: 1;
     text-align: center; }
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      /* line 29, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+      /* line 27, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
       #index h1 {
         font-size: 3em; } }
-  /* line 42, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
+  /* line 40, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
   #index h1::before {
     content: "";
     position: absolute;
