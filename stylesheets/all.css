@@ -614,7 +614,7 @@ h1 {
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
       /* line 201, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .grid .item:nth-child(5), .container .item:nth-child(5) {
-        background-position: 0px 0px,center; } }
+        background-position: 52px 0px,center; } }
 
 /* line 212, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .grid:after, .container:after {
@@ -761,4 +761,4 @@ iframe {
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* line 377, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     iframe {
-      left: 46px; } }
+      left: 52px; } }
