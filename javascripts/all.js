@@ -23274,7 +23274,7 @@ $(document).ready(function (){
 ///////// IF BROWSER IS MOZILLA THEN DON'T DO CLIPPING MASK /////////
   if ($.browser.mozilla) {
     $('#index').css({
-      background-image: 'none',
+      'background-image': 'none',
       background: '#FFF',
       color: '#f02525'
     });
