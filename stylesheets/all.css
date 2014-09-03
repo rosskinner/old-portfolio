@@ -615,17 +615,13 @@ h1 {
       background: transparent;
       float: right; }
       @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        /* line 193, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-        .grid .item .vid, .grid div .vid, .container .item .vid, .container div .vid {
-          float: none; } }
-      @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        /* line 204, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+        /* line 200, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
         .grid .item .vid iframe, .grid div .vid iframe, .container .item .vid iframe, .container div .vid iframe {
           display: none; } }
-    /* line 211, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 207, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .grid .item h5, .grid div h5, .container .item h5, .container div h5 {
       text-align: left; }
-    /* line 214, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 210, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .grid .item p, .grid div p, .container .item p, .container div p {
       display: inline-block;
       font-size: 0.7em;
@@ -633,24 +629,28 @@ h1 {
       width: 220px;
       padding-bottom: 10px;
       border-bottom: 1px solid #352d2d; }
-      /* line 221, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 217, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .grid .item p a, .grid div p a, .container .item p a, .container div p a {
         color: red; }
-    /* line 225, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 221, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .grid .item img, .grid div img, .container .item img, .container div img {
       display: inline-block;
       width: 70%;
       vertical-align: top;
       float: right; }
       @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        /* line 225, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+        /* line 221, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
         .grid .item img, .grid div img, .container .item img, .container div img {
           float: none; } }
-  /* line 237, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 233, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .grid .item:nth-child(5) img, .container .item:nth-child(5) img {
     position: absolute;
     z-index: 1;
     width: 100%; }
+    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      /* line 233, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      .grid .item:nth-child(5) img, .container .item:nth-child(5) img {
+        float: none; } }
   /* line 247, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .grid .item:nth-child(5) p, .container .item:nth-child(5) p {
     float: left; }
