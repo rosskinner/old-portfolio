@@ -651,7 +651,7 @@ h1 {
       /* line 233, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .grid .item:nth-child(5) img, .container .item:nth-child(5) img {
         float: none;
-        left: -60px; } }
+        left: -50px; } }
   /* line 248, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .grid .item:nth-child(5) p, .container .item:nth-child(5) p {
     float: left; }
