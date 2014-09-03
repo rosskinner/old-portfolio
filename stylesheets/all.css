@@ -615,18 +615,13 @@ h1 {
       background: transparent;
       float: right; }
       @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        /* line 193, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
-        .grid .item .vid, .grid div .vid, .container .item .vid, .container div .vid {
-          float: none;
-          text-align: center; } }
-      @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        /* line 205, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+        /* line 200, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
         .grid .item .vid iframe, .grid div .vid iframe, .container .item .vid iframe, .container div .vid iframe {
           display: none; } }
-    /* line 212, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 207, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .grid .item h5, .grid div h5, .container .item h5, .container div h5 {
       text-align: left; }
-    /* line 215, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 210, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .grid .item p, .grid div p, .container .item p, .container div p {
       display: inline-block;
       font-size: 0.7em;
@@ -634,88 +629,89 @@ h1 {
       width: 220px;
       padding-bottom: 10px;
       border-bottom: 1px solid #352d2d; }
-      /* line 222, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 217, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .grid .item p a, .grid div p a, .container .item p a, .container div p a {
         color: red; }
-    /* line 226, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 221, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .grid .item img, .grid div img, .container .item img, .container div img {
       display: inline-block;
       width: 70%;
       vertical-align: top;
       float: right; }
       @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        /* line 226, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+        /* line 221, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
         .grid .item img, .grid div img, .container .item img, .container div img {
           float: none; } }
-  /* line 238, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 233, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .grid .item:nth-child(5) img, .container .item:nth-child(5) img {
     position: absolute;
     z-index: 1;
     width: 100%; }
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      /* line 238, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 233, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .grid .item:nth-child(5) img, .container .item:nth-child(5) img {
-        float: none; } }
-  /* line 252, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+        float: none;
+        left: -60px; } }
+  /* line 248, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .grid .item:nth-child(5) p, .container .item:nth-child(5) p {
     float: left; }
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      /* line 252, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 248, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .grid .item:nth-child(5) p, .container .item:nth-child(5) p {
         float: none; } }
 
-/* line 262, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 258, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .container {
   padding-right: 50px; }
-  /* line 264, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 260, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .container div {
     display: inline-block;
     width: 220px; }
-    /* line 268, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 264, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .container div p {
       display: block; }
 
-/* line 274, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 270, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .grid:after, .container:after {
   content: "";
   width: 100%;
   display: inline-block; }
 
-/* line 283, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 279, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .footer {
   background: #352d2d;
   height: 70px;
   color: #FFF;
   padding: 10px;
   box-sizing: border-box; }
-  /* line 289, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 285, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer #q-link {
     display: inline-block;
     width: 29%;
     cursor: pointer; }
-  /* line 294, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 290, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer ul {
     margin: 0;
     vertical-align: top; }
-    /* line 297, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 293, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .footer ul li {
       margin-top: 0; }
-      /* line 299, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 295, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .footer ul li a {
         color: #FFF; }
-  /* line 304, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 300, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .footer p {
     font-size: 0.7em; }
 
-/* line 313, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 309, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .about .container div {
   margin-top: 50px;
   vertical-align: top; }
 
-/* line 325, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 321, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .contact h2 {
   text-align: center; }
-/* line 328, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 324, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 .contact form {
   width: 600px;
   margin: 2em auto;
@@ -723,10 +719,10 @@ h1 {
   background: white;
   border-radius: 5px; }
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* line 328, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 324, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .contact form {
       width: 100%; } }
-  /* line 338, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 334, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .message, .contact form .emailcon, .contact form .name, .contact form .footer, .contact form header, .contact form textarea {
     display: block;
     padding: 0;
@@ -734,19 +730,19 @@ h1 {
     border: 0;
     clear: both;
     overflow: hidden; }
-  /* line 347, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 343, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form header {
     height: 75px;
     background: rgba(0, 0, 0, 0.05);
     line-height: 75px;
     padding-left: 20px;
     border-radius: 5px 5px 0 0; }
-    /* line 354, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 350, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .contact form header h1 {
       font-size: 1.2em;
       text-transform: uppercase;
       color: rgba(51, 51, 51, 0.4); }
-  /* line 361, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 357, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .first, .contact form .last {
     float: left;
     width: 278px;
@@ -755,18 +751,18 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.1);
     height: 50px; }
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      /* line 361, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 357, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .contact form .first, .contact form .last {
         width: 100%; } }
-  /* line 374, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 370, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .last {
     width: 279px;
     border-left: 0; }
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      /* line 374, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 370, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .contact form .last {
         width: 100%; } }
-  /* line 383, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 379, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .email, .contact form textarea {
     height: 50px;
     width: 578px;
@@ -776,17 +772,17 @@ h1 {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  /* line 394, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 390, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form textarea {
     height: 200px; }
-  /* line 399, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 395, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form footer {
     height: 49px;
     border: 1px dashed rgba(0, 0, 0, 0.3);
     border-radius: 0 0 5px 5px;
     padding-left: 0;
     padding-right: 20px; }
-    /* line 406, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 402, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     .contact form footer button {
       height: 32px;
       background: red;
@@ -798,19 +794,19 @@ h1 {
       padding: 0 20px 0 20px;
       border-bottom: 3px solid #c0392b;
       transition: all linear .2s; }
-      /* line 418, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 414, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .contact form footer button:hover {
         background: rgba(255, 0, 0, 0.7); }
-      /* line 422, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+      /* line 418, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
       .contact form footer button:focus {
         outline: none; }
-  /* line 428, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+  /* line 424, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
   .contact form .first:focus, .contact form .last:focus, .contact form .email:focus, .contact form textarea:focus, .contact form textarea:focus {
     outline: none;
     background: rgba(255, 0, 0, 0.1);
     color: rgba(51, 51, 51, 0.7); }
 
-/* line 439, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+/* line 435, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
 iframe {
   z-index: 100;
   position: absolute;
@@ -818,6 +814,6 @@ iframe {
   top: 15px;
   border: none; }
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* line 439, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
+    /* line 435, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/all.scss */
     iframe {
       left: 62px; } }
