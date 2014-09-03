@@ -9,12 +9,6 @@
     #index, .projects, .about, .contact {
       height: 100%; } }
 
-/* line 17, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
-.projects {
-  background-image: url(../images/arrow.svg);
-  background-position: -110px 700px;
-  background-size: 100% auto; }
-
 /* line 22, /Users/Ros/Projects/rosskinner.github.io/source/stylesheets/index.scss */
 #index {
   background-image: url(../images/drink.jpg);
