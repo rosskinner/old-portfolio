@@ -34,5 +34,3 @@ app.NavView = Backbone.View.extend({
     app.router.navigate("", {trigger: true, replace: true});
   }
 });
-
-
