@@ -30,6 +30,37 @@ $(document).ready(function (){
   $('.about').css({'min-height': $(window).height()});
   $('.contact').css({'min-height': $(window).height()});
 
+/////// FADE BACKGROUND IMAGE OUT ///////
+// var background = $('<div/>', {
+//     id: 'background',
+
+// }).prependTo('.index');
+
+$('#background').css({
+  position: 'absolute',
+  width: '100%',
+  height: $(window).height(),
+  'z-index': '2000',
+  top: '0',
+  'background-color': '#f02525',
+  opacity: '1',
+  'padding-top': '207px'
+});
+
+var h1 = $('#background').find('h1');
+console.log(h1);
+$(h1).css({
+  // position: 'absolute',
+  // top: ($(window).height())/2 - 69,
+  // left: ($(window).height())/2 - 56,
+  color: '#FFF'
+});
+$('#background').velocity({
+  opacity: 0
+  }, 5000,{
+    easing: "easeInSine"
+  });
+
 ///////// IF BROWSER IS MOZILLA THEN DON'T DO CLIPPING MASK /////////
 
 var FF = !(window.mozInnerScreenX == null);
@@ -40,4 +71,8 @@ var FF = !(window.mozInnerScreenX == null);
       color:'#f02525'
     });
   }
+
+
 });
+
+
