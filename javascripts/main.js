@@ -31,10 +31,6 @@ $(document).ready(function (){
   $('.contact').css({'min-height': $(window).height()});
 
 /////// FADE BACKGROUND IMAGE OUT ///////
-// var background = $('<div/>', {
-//     id: 'background',
-
-// }).prependTo('.index');
 
 $('#background').css({
   position: 'absolute',
@@ -47,18 +43,22 @@ $('#background').css({
   'padding-top': '207px'
 });
 
+
 var h1 = $('#background').find('h1');
-console.log(h1);
+
 $(h1).css({
-  // position: 'absolute',
-  // top: ($(window).height())/2 - 69,
-  // left: ($(window).height())/2 - 56,
   color: '#FFF'
 });
+
 $('#background').velocity({
   opacity: 0
   }, 5000,{
     easing: "easeInSine"
+  }, function (){
+      $('#background').css({
+        'display': 'none'
+    });
+
   });
 
 ///////// IF BROWSER IS MOZILLA THEN DON'T DO CLIPPING MASK /////////
